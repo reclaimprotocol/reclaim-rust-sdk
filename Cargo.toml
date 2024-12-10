@@ -2,10 +2,10 @@
 name = "reclaim-rust-sdk"
 version = "0.1.0"
 edition = "2021"
-authors = ["Kushal Shah <kushal@creatoros.co>"]
+authors = ["Reclaim Engineering <engineering@creatoros.co>"]
 description = "A Rust SDK for Reclaim Protocol"
 license = "MIT"
-repository = "https://github.com/yourusername/reclaim-rust-sdk"
+repository = "https://github.com/reclaimprotocol/reclaim-rust-sdk"
 documentation = "https://docs.reclaimprotocol.org/"
 readme = "README.md"
 keywords = ["reclaim", "blockchain", "verification", "proof"]

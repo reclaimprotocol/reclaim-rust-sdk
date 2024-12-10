@@ -2,15 +2,6 @@
 
 This guide will walk you through integrating the Reclaim Protocol Rust SDK into your application. We'll demonstrate how to use the SDK to verify proofs in your Rust applications.
 
-## Prerequisites
-
-Before we begin, make sure you have:
-
-1. An application ID from Reclaim Protocol.
-2. An application secret from Reclaim Protocol.
-3. A provider ID for the specific service you want to verify.
-
-You can obtain these details from the [Reclaim Developer Portal](https://dev.reclaimprotocol.org/).
 
 ## Step 1: Add the dependency
 
@@ -18,7 +9,7 @@ Add the Reclaim Protocol SDK to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-reclaim-sdk = "0.1.0"
+reclaim-rust-sdk = "0.1.0"
 tokio = { version = "1.0", features = ["full"] }
 ```
 
@@ -27,7 +18,7 @@ tokio = { version = "1.0", features = ["full"] }
 Here's a simple example demonstrating how to verify proofs using the Reclaim SDK:
 
 ```rust
-use reclaim_sdk::{ReclaimClient, ProofRequest, VerificationResult};
+use reclaim_rust_sdk::verify_proof;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
